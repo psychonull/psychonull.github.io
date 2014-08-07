@@ -1,0 +1,12 @@
+# Site settings
+title: Psychonull
+#email: your-email@domain.com
+description: "We are a group of friends having fun, making games, notgames, and stuff nobody cares about."
+baseurl: ""
+url: "https://psychonull.github.io"
+twitter_username: psychonull
+github_username:  psychonull
+
+# Build settings
+markdown: kramdown
+permalink: pretty
