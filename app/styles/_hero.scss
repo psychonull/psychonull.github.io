@@ -82,3 +82,32 @@
     bottom: 0px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .hero, .footer {
+
+    &::before {
+      opacity: 0.1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .footer {
+    .social {
+      left: 50px;
+      right: initial;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}

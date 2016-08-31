@@ -94,9 +94,38 @@ section.content {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1000px) {
+  body {
+    &::before {
+      display: none;
+    }
+  }
+
   .container {
-    //max-width: 500px;
+    >div {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  section.content {
+    padding-top: 50px;
+    margin: 60px 0 100px 0;
+
+    .title {
+      h2 {
+        padding: 20px 15px;
+        line-height: 1em;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.content {
+    margin: 60px 0 50px 0;
   }
 }
