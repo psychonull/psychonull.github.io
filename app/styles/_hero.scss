@@ -1,0 +1,33 @@
+.hero {
+  background: #444;
+  color: #fff;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+  @include container;
+  position: relative;
+/*
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background: url('/images/logo.png');
+  }
+*/
+  h1 {
+    @include span(6);
+    font-size: 3em;
+    margin: 0;
+    padding-top: 45px;
+  }
+
+  p {
+    @include span(6);
+    font-size: 1em;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 450px;
+  }
+}

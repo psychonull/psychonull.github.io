@@ -1,0 +1,50 @@
+{
+  "jams": [{
+    "jam": "Point and Click Jam",
+    "title": "Upgrade yourseft",
+    "info": "A sci-fi dystopian adventure, heavily inspired by maniac mansion. 320x200 game using the Full EGA color palette (16 colors at a time)",
+    "image": "/games/upgrade-yourself.jpg",
+    "play": "http://gamejolt.com/games/upgrade-yourself/40410",
+    "source": "https://bitbucket.org/psychonull/upgrade-yourself",
+    "entry": "http://jams.gamejolt.io/pointandclickjam/games/upgrade-yourself/40410"
+  },{
+    "jam": "js13k",
+    "title": "Spider Busters",
+    "info": "Lead spiders into the Vacuum by using The Elements on the spider web.",
+    "image": "/games/spider-busters.jpg",
+    "play": "http://js13kgames.com/games/spider-busters/index.html",
+    "source": "https://github.com/pjnovas/13k-2014",
+    "entry": "http://js13kgames.com/entries/spider-busters"
+  }],
+  "misc": [{
+    "title": "Hexa Keeper",
+    "info": "Game for 1GAM - September 2013",
+    "image": "/games/hexa-keeper.png",
+    "play": "https://pjnovas.github.io/hexa-keeper",
+    "source": "https://bitbucket.org/pjnovas/hexa-keeper"
+  }, {
+    "title": "Fernet JS 404",
+    "info": "A 404 placeholder with a quick a fun Space Invaders",
+    "play": "https://pjnovas.github.io/hexa-keeper",
+    "source": "https://bitbucket.org/pjnovas/hexa-keeper"
+  }, {
+    "hidden": true,
+    "title": "Colorage",
+    "info": "",
+    "play": "",
+    "source": "https://bitbucket.org/matiasarriola/colorage"
+  }, {
+    "title": "Test Drive",
+    "info": "An experimen with a car manual gear box",
+    "play": "http://pjnovas.github.io/test-driver",
+    "source": "https://github.com/pjnovas/test-driver"
+  }, {
+    "title": "Animal Shoot Down",
+    "info": "",
+    "play": "",
+    "source": ""
+  }],
+  "snippets": [{
+    "title": "New Year 2014"
+  }]
+}

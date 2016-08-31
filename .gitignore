@@ -1,1 +1,7 @@
-_site
+node_modules
+.tmp
+bower_components
+test/bower_components
+npm-debug.log
+dist/
+.publish
