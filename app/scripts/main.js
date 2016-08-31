@@ -17,6 +17,8 @@ const renderMisc = () => {
   $('#misc-ctn').empty().append(miscTemplate({ games: misc }));
 }
 
+const catNames = ['overall','theme','fun','humor','graphics','mood','innovation', 'audio', 'average'];
+
 const transform = author => {
   let uid = author.ldUserId;
   author.link = `http://ludumdare.com/compo/author/${author.ldUser}`;
@@ -27,11 +29,12 @@ const transform = author => {
     if (!entry.noScores){
       entry.categories = [];
 
-      Object.keys(entry.scores).forEach( key => {
-        let score = entry.scores[key];
+      catNames.forEach( key => {
+        let score = entry.scores[key] || -1;
         let isLast = (key === 'average' ? true : false);
 
         entry.categories.push({
+          hidden: score === -1 ? true : false,
           name: key,
           score: score,
           rank: isLast ? entry.ranking.total : entry.ranking[key],
@@ -40,9 +43,9 @@ const transform = author => {
         });
       });
 
-      entry.categories.sort(function(a, b){
-        return a.rank > b.rank;
-      });
+      //entry.categories.sort(function(a, b){
+      //  return a.rank > b.rank;
+      //});
     }
 
     entry.entryURL = `http://ludumdare.com/compo/ludum-dare-${ld}/?action=preview&uid=${uid}`;

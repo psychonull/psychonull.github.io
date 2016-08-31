@@ -62,10 +62,9 @@ $entry-height: 300px;
       left:0;
       width: 100%;
       height: 100%;
-      background: #fff;
     }
 
-    &:hover {
+    &:hover, &.flipped {
       .card {
         transform: rotateY( 180deg );
         transform: translateX( -100% ) rotateY( -180deg );
@@ -160,6 +159,12 @@ $entry-height: 300px;
     transform: rotateY( 180deg );
     background-color: rgba(0,0,0,0.47);
     color: #fff;
+
+    &.no-scores {
+      text-align: center;
+      line-height: 9em;
+      font-size: 30px;
+    }
   }
 
   .stats {
@@ -189,6 +194,19 @@ $entry-height: 300px;
         }
         &:nth-child(4){
           text-align: center;
+        }
+      }
+
+      &.hidden {
+
+        span {
+          &:nth-child(1),
+          &:nth-child(4) {
+            display: none;
+          }
+          &:nth-child(3){
+            text-decoration: line-through;
+          }
         }
       }
 
