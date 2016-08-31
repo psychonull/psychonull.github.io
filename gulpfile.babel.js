@@ -186,5 +186,5 @@ gulp.task('default', ['clean'], () => {
 });
 
 gulp.task('deploy', () => {
-  return gulp.src('./dist/**/*').pipe($.ghPages({ branch: 'test' }));
+  return gulp.src('./dist/**/*').pipe($.ghPages({ branch: 'master' }));
 });
