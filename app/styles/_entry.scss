@@ -1,0 +1,310 @@
+$entry-height: 300px;
+
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 50px;
+
+  li {
+    color: #fff;
+    background-color: #444;
+    display: inline-block;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+    border: 5px solid #444;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      display: block;
+      padding: 15px 20px 10px 20px;
+    }
+
+    &:hover {
+      color: #444;
+      border: 5px solid #444;
+      background-color: #fff;
+
+      a {
+        color: #444;
+      }
+    }
+  }
+}
+
+.entry {
+  width: 100%;
+  margin: 80px 0 80px 40px;
+  max-width: 800px;
+  border: 5px solid #444;
+  min-height: $entry-height;
+  position: relative;
+  color: #444;
+
+  .card-holder {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    padding-left: 0;
+    perspective: 800px;
+    z-index: 10;
+
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover, &.flipped {
+      .card {
+        transform: rotateY( 180deg );
+        transform: translateX( -100% ) rotateY( -180deg );
+      }
+    }
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+    transform-origin: right center;
+  }
+
+  .desc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em;
+      line-height: 0.9em;
+      text-align: right;
+
+      position: absolute;
+      right: 10px;
+      bottom: -35px;
+      background: #fff;
+      padding: 5px 20px;
+
+      a {
+        text-decoration: none;
+        color: #444;
+      }
+    }
+
+    h2 {
+      position: absolute;
+      right: 20px;
+      top: -30px;
+      background: #fff;
+      padding: 20px;
+      margin: 0;
+    }
+
+    p {
+      max-width: 440px;
+      text-align: right;
+      position: absolute;
+      top: 30px;
+      right: 20px;
+    }
+
+  }
+
+  figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    >div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .front {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  }
+
+  .back {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+    background-color: white;
+    transform: rotateY( 180deg );
+    background-color: rgba(0,0,0,0.47);
+    color: #fff;
+
+    &.no-scores {
+      text-align: center;
+      line-height: 9em;
+      font-size: 30px;
+    }
+  }
+
+  .stats {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    li {
+      padding: 5px 0;
+      background: rgba(0,0,0,0.50);
+      border-top: 1px solid #616161;
+
+      span {
+        width: 50px;
+        display: inline-block;
+
+        &:nth-child(1){
+          text-align: left;
+        }
+        &:nth-child(2){
+          text-align: right;
+        }
+        &:nth-child(3){
+          text-align: center;
+          width: 100px;
+        }
+        &:nth-child(4){
+          text-align: center;
+        }
+      }
+
+      &.hidden {
+
+        span {
+          &:nth-child(1),
+          &:nth-child(4) {
+            display: none;
+          }
+          &:nth-child(3){
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      &:nth-child(even){
+        background: rgba(0,0,0,0.70);
+      }
+
+      &:last-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        font-weight: bold;
+        border-top: 2px solid $totals-line-color;
+        background: rgba(0,0,0,1);
+
+        span:nth-child(1){
+          text-align: center;
+        }
+
+        span:nth-child(2){
+          text-align: left;
+        }
+
+        span:nth-child(3){
+          text-align: right;
+        }
+      }
+
+    }
+  }
+}
+
+.jams {
+  .card-holder {
+    perspective: none;
+
+    &:hover {
+      .card {
+        transform: initial;
+      }
+    }
+  }
+
+  .card {
+    transform-style: flat;
+    transition: initial;
+    transform-origin: initial;
+  }
+
+  figure.front {
+    box-shadow: none;
+  }
+
+  .desc {
+    p {
+      max-width: 400px;
+    }
+  }
+}
+
+.content.misc {
+  padding-top: 50px;
+}
+
+.mini-game {
+  @include span(12 no-gutters);
+  width: 100%;
+  margin: 20px auto 0 auto;
+  border: 5px solid #444;
+  position: relative;
+  color: #444;
+
+  figure {
+    @include span(5);
+    position: relative;
+    height: 200px;
+
+    >div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .desc {
+    @include span(7);
+    padding-left: span(0.5);
+    padding-right: span(0.5);
+
+    .buttons {
+      bottom: 0;
+      margin: 10px 30px;
+    }
+  }
+}

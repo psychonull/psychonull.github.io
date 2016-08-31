@@ -1,0 +1,84 @@
+.hero, .footer {
+  background: #444;
+  color: #fff;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+  @include container;
+  position: relative;
+  min-height: 150px;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    content: '';
+    background-image: url("/images/psycho_white.png");
+    width: 160px;
+    height: 180px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: capitalize;
+    padding-left: 170px;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 450px;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.footer {
+  &::before {
+    top: -30px;
+    left: 52%;
+    opacity: 0.2;
+  }
+
+  h1 {
+    padding-left: 0;
+  }
+
+  .social {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+
+    a {
+      svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        vertical-align: middle;
+        color: #fff;
+      }
+
+      font-weight: bold;
+      text-transform: none;
+      color: #fff;
+    }
+  }
+
+  p {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+  }
+}
