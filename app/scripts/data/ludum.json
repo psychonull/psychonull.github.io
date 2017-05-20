@@ -3,6 +3,85 @@
   "ldUserId": "31386",
   "entries": [
     {
+      "percents": {
+        "humor": 15,
+        "audio": 20.2,
+        "innovation": 31.8,
+        "theme": 15.6,
+        "overall": 23.5,
+        "mood": 30.9,
+        "graphics": 24.3,
+        "fun": 19.9
+      },
+      "ludum": 38,
+      "title": "Cell Wars",
+      "info": "Cell Wars is a simulation of A Small Word inside a human body at microscopic level. Play as a Cell of the immune system against a virus.",
+      "entry": "https://ldjam.com/events/ludum-dare/38/cell-wars-1",
+      "coolness": 0,
+      "scores": {
+        "humor": 2.9,
+        "audio": 2.88,
+        "innovation": 2.71,
+        "theme": 3.62,
+        "overall": 3.29,
+        "mood": 2.85,
+        "graphics": 3.32,
+        "fun": 3.19,
+        "average": 3.1
+      },
+      "ranking": {
+        "humor": 279,
+        "audio": 377,
+        "innovation": 592,
+        "theme": 290,
+        "overall": 437,
+        "mood": 575,
+        "graphics": 452,
+        "fun": 371,
+        "total": 1862
+      },
+      "type": "jam"
+    },
+    {
+      "percents": {
+        "humor": 13.4,
+        "audio": 17.1,
+        "innovation": 27.5,
+        "theme": 30.2,
+        "overall": 30.6,
+        "mood": 32.1,
+        "graphics": 32.6,
+        "fun": 35.8
+      },
+      "ludum": 37,
+      "title": "Crawling Crowd",
+      "info": "Crawling Crowd is a puzzle game. You have to take a random alien out of the room by moving the other ones to free spaces. Do it in the least amount of movements you can!",
+      "coolness": 44,
+      "scores": {
+        "humor": 3.28,
+        "audio": 3.42,
+        "innovation": 3.17,
+        "theme": 3.58,
+        "overall": 3.32,
+        "mood": 3.21,
+        "graphics": 3.4,
+        "fun": 3,
+        "average": 3.3
+      },
+      "ranking": {
+        "humor": 199,
+        "audio": 254,
+        "innovation": 410,
+        "theme": 450,
+        "overall": 456,
+        "mood": 478,
+        "graphics": 486,
+        "fun": 533,
+        "total": 1489
+      },
+      "type": "jam"
+    },
+    {
       "noScores": true,
       "ludum": 36,
       "title": "Nilux",

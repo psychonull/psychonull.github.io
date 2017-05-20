@@ -48,7 +48,7 @@ const transform = author => {
       //});
     }
 
-    entry.entryURL = `http://ludumdare.com/compo/ludum-dare-${ld}/?action=preview&uid=${uid}`;
+    entry.entryURL = entry.entry || `http://ludumdare.com/compo/ludum-dare-${ld}/?action=preview&uid=${uid}`;
     entry.play = `https://psychonull.github.io/${(entry.play ? entry.play : 'ld'+ld)}`;
     entry.source = `https://github.com/psychonull/ld${ld}`;
     entry.image = `/images/entries/ld${ld}.png`;
