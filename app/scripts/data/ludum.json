@@ -4,6 +4,43 @@
   "entries": [
     {
       "percents": {
+        "overall": 44.4,
+        "fun": 40,
+        "innovation": 19.5,
+        "theme": 61.3,
+        "graphics": 37.3,
+        "humor": 13.8,
+        "mood": 49.7
+      },
+      "ludum": 39,
+      "title": "Squanchy Squids",
+      "info": "Squids have power over Octupuses or at least that seems to be happening in this weird squanchy game.",
+      "entry": "https://ldjam.com/events/ludum-dare/39/squanchy-squids",
+      "coolness": 0,
+      "scores": {
+        "overall": 3.087,
+        "fun": 2.957,
+        "innovation": 3.348,
+        "theme": 2.13,
+        "graphics": 3.304,
+        "humor": 3.087,
+        "mood": 2.696,
+        "average": 2.94
+      },
+      "ranking": {
+        "overall": 604,
+        "fun": 544,
+        "innovation": 265,
+        "theme": 834,
+        "graphics": 507,
+        "humor": 188,
+        "mood": 676,
+        "total": 1361
+      },
+      "type": "jam"
+    },
+    {
+      "percents": {
         "humor": 15,
         "audio": 20.2,
         "innovation": 31.8,
