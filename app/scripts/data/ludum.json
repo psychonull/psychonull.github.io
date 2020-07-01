@@ -4,6 +4,44 @@
   "entries": [
     {
       "percents": {
+        "overall": 53.8,
+        "fun": 33.4,
+        "innovation": 45.5,
+        "theme": 70.3,
+        "graphics": 38.3,
+        "mood": 33.9
+      },
+      "ludum": 46,
+      "title": "Commandball",
+      "info": "The longer you keep your projectiles alive, the longer the enemy will be stunned, open for more hits.",
+      "entry": "https://ldjam.com/events/ludum-dare/46/commandball",
+      "coolness": 137,
+      "scores": {
+        "overall": 3.182,
+        "fun": 3.333,
+        "innovation": 3.083,
+        "theme": 2.261,
+        "graphics": 3.521,
+        "audio": 0,
+        "humor": 0,
+        "mood": 3.4,
+        "average": 3.13
+      },
+      "ranking": {
+        "overall": 1924,
+        "fun": 1194,
+        "innovation": 1626,
+        "theme": 2515,
+        "graphics": 1369,
+        "audio": 0,
+        "humor": 0,
+        "mood": 1214,
+        "total": 3576
+      },
+      "type": "jam"
+    },
+    {
+      "percents": {
         "overall": 44.4,
         "fun": 40,
         "innovation": 19.5,
@@ -435,7 +473,6 @@
         "total": 780
       },
       "type": "jam"
-    },
-
+    }
   ]
 }

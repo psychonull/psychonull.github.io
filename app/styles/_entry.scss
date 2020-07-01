@@ -39,7 +39,7 @@ $entry-height: 300px;
     position: initial;
     @include span(12);
     text-align: center;
-    margin: 10px 0!important;
+    margin: 10px 0 !important;
   }
 }
 
@@ -66,15 +66,16 @@ $entry-height: 300px;
     .card-overlay {
       position: absolute;
       top: 0;
-      left:0;
+      left: 0;
       width: 100%;
       height: 100%;
     }
 
-    &:hover, &.flipped {
+    &:hover,
+    &.flipped {
       .card {
-        transform: rotateY( 180deg );
-        transform: translateX( -100% ) rotateY( -180deg );
+        transform: rotateY(180deg);
+        transform: translateX(-100%) rotateY(-180deg);
       }
     }
   }
@@ -130,7 +131,6 @@ $entry-height: 300px;
       top: 30px;
       right: 20px;
     }
-
   }
 
   figure {
@@ -143,7 +143,7 @@ $entry-height: 300px;
     height: 100%;
     backface-visibility: hidden;
 
-    >div {
+    > div {
       position: absolute;
       top: 0;
       left: 0;
@@ -156,15 +156,15 @@ $entry-height: 300px;
   }
 
   .front {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
 
   .back {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
     background-color: white;
-    transform: rotateY( 180deg );
-    background-color: rgba(0,0,0,0.47);
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.47);
     color: #fff;
 
     &.no-scores {
@@ -182,43 +182,42 @@ $entry-height: 300px;
 
     li {
       padding: 5px 0;
-      background: rgba(0,0,0,0.50);
+      background: rgba(0, 0, 0, 0.5);
       border-top: 1px solid #616161;
 
       span {
-        width: 50px;
+        width: 55px;
         display: inline-block;
 
-        &:nth-child(1){
+        &:nth-child(1) {
           text-align: left;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           text-align: right;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           text-align: center;
           width: 100px;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           text-align: center;
         }
       }
 
       &.hidden {
-
         span {
           &:nth-child(1),
           &:nth-child(4) {
             display: none;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             text-decoration: line-through;
           }
         }
       }
 
-      &:nth-child(even){
-        background: rgba(0,0,0,0.70);
+      &:nth-child(even) {
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &:last-child {
@@ -228,21 +227,20 @@ $entry-height: 300px;
       &:last-child {
         font-weight: bold;
         border-top: 2px solid $totals-line-color;
-        background: rgba(0,0,0,1);
+        background: rgba(0, 0, 0, 1);
 
-        span:nth-child(1){
+        span:nth-child(1) {
           text-align: center;
         }
 
-        span:nth-child(2){
+        span:nth-child(2) {
           text-align: left;
         }
 
-        span:nth-child(3){
+        span:nth-child(3) {
           text-align: right;
         }
       }
-
     }
   }
 }
@@ -292,7 +290,7 @@ $entry-height: 300px;
     position: relative;
     height: 200px;
 
-    >div {
+    > div {
       position: absolute;
       top: 0;
       left: 0;
@@ -379,7 +377,8 @@ $entry-height: 300px;
         }
       }
 
-      &:hover, &.flipped {
+      &:hover,
+      &.flipped {
         .card {
           transform: initial;
         }
@@ -422,7 +421,6 @@ $entry-height: 300px;
 
 @media screen and (max-width: 650px) {
   .entry {
-
     .card-holder {
       @include span(12);
       height: 200px;
